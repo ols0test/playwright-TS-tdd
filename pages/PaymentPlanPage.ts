@@ -151,5 +151,4 @@ export class PaymentPlanPage extends BasePage {
     await this.activeNextButton.click();
   }
 
-
 }
