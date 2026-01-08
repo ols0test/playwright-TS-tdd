@@ -137,6 +137,8 @@ export class StartApplicationPage extends BasePage {
 
   public readonly originalPrice: Locator = this.locator("//s[contains(.,'$')]");
 
+  public readonly refundPolicyText: Locator = this.locator("//div[@class='row ng-star-inserted']/div[@class='col-sm info']");
+
   public async enterFirstName(firstName: string) {
     await this.firstNameInputBox.fill(firstName);
   }
