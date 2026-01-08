@@ -139,6 +139,10 @@ export class StartApplicationPage extends BasePage {
 
   public readonly refundPolicyText: Locator = this.locator("//div[@class='row ng-star-inserted']/div[@class='col-sm info']");
 
+  public readonly firstNameDefaultValue: Locator = this.locator("//text()[contains(., 'First Name')]")
+
+  public readonly lastNameDefaultValue: Locator = this.locator("//text()[contains(., 'Last Name')]")
+
   public async enterFirstName(firstName: string) {
     await this.firstNameInputBox.fill(firstName);
   }
