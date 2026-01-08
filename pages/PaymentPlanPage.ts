@@ -3,6 +3,7 @@ import { Locator } from 'playwright';
 
 export class PaymentPlanPage extends BasePage {
 
+  public readonly paymentPlanButtons: Locator = this.locator("//mat-expansion-panel-header[@role='button']");
   public readonly chooseAPaymentPlanText: Locator 
     = this.locator("//*[text()='Choose a payment plan']");
 
