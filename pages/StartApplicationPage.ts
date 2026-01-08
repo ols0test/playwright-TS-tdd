@@ -116,7 +116,7 @@ export class StartApplicationPage extends BasePage {
   );
 
   public readonly footer: Locator = this.locator(
-    "//p[@class = 'footer-text' and contains(text(), 'Need help?')]"
+    "(//p[@class='footer-text' and contains(normalize-space(.),'Need help? Contact us at enrollment@cydeo.com')])[1]"
   );
 
   public readonly nextButton: Locator = this.locator(
